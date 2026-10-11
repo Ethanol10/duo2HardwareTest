@@ -1,0 +1,16 @@
+cc_binary {
+    name: "touch_pen_test",
+    srcs: ["touch_pen.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libhidlbase",
+        "vendor.surface.touchpen@1.3", 
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}

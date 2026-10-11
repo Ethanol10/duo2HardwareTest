@@ -1,0 +1,16 @@
+cc_binary {
+    name: "display_topology_test",
+    srcs: ["display_topology.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libhidlbase",
+        "vendor.surface.displaytopology@1.2", 
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
